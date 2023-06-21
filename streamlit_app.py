@@ -75,10 +75,19 @@ my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 # streamlit.header("The fruit load list contains:")
 # streamlit.dataframe(my_data_row)
 
+
 #Oops! Let's Get All the Rows, Not Just One
 my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
+
+#--ADDED AT THE END --
+# Can You Add A Second Text Entry Box? 
+
+add_my_fruit = streamlit.text_input('What fruit would you like to add?')
+streamlit.write('Thanks for adding ', add_my_fruit)
+
+
 
 
 
