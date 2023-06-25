@@ -121,14 +121,14 @@ except URLError as e:
 # streamlit.text(my_data_row)
 
 #  Let's Change the Streamlit Components to Make Things Look a Little Nicer
-streamlit.header("The fruit load list contains:")
-streamlit.dataframe(my_data_row)
+# streamlit.header("The fruit load list contains:")
+# streamlit.dataframe(my_data_row)
 
 
 #Oops! Let's Get All the Rows, Not Just One
-my_data_rows = my_cur.fetchall()
-streamlit.header("The fruit load list contains:")
-streamlit.dataframe(my_data_rows)
+# my_data_rows = my_cur.fetchall()
+# streamlit.header("The fruit load list contains:")
+# streamlit.dataframe(my_data_rows)
 
 #--ADDED AT THE END --
 # Can You Add A Second Text Entry Box? 
@@ -154,7 +154,7 @@ import snowflake.connector
 
 # LESSON 12 PART 3: FUNCTIONS AS A BUTTON
 
-streamlit.header("The fruit list contains:")
+streamlit.header("The fruit load list contains:")
 # Snowflake-related functions
 def get_fruit_load_list():
       with my_cnx.cursor() as my_cur:
