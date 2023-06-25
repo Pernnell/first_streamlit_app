@@ -150,7 +150,8 @@ import snowflake.connector
 
 # LESSON 12 PART 3: FUNCTIONS AS A BUTTON
 
-streamlit.header("The fruit load list contains:")
+# streamlit.header("The fruit load list contains:")
+streamlit.header("View our Fruit List - Add your Favourites!:")
 # Snowflake-related functions
 def get_fruit_load_list():
       with my_cnx.cursor() as my_cur:
